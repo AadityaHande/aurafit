@@ -67,5 +67,17 @@
       <img src="motiv.jpg" alt="Motivation" class="bodybuilder-image">
     </div>
   </section>
+  <script>
+    const logoutBtn = document.getElementById('logoutBtn');
+    if (logoutBtn) {
+        logoutBtn.addEventListener('click', () => {
+            localStorage.removeItem('auraSurvey');
+            localStorage.removeItem('auraPlan');
+            window.location.href = 'login.html';
+        });
+    } else {
+        console.error("Logout button element not found!");
+    }
+</script>
 </body>
 </html>
