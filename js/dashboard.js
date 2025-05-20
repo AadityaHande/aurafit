@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Display user name
-  const name = survey.name || 'Athlete';
+  const name = survey.name || 'Rahul';
   const first = name.split(' ')[0];
   userNameNav.textContent  = ` ${first}`;
   userNameHero.textContent = first;
